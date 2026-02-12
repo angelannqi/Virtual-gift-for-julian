@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Julian ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="clock-container">
+        <div class="clock-box">
+            <span>MY Time 🇲🇾</span>
+            <div id="my-time">--:--</div>
+        </div>
+        <div class="heart-divider">✈️</div>
+        <div class="clock-box">
+            <span>AU Time 🇦🇺</span>
+            <div id="au-time">--:--</div>
+        </div>
+    </div>
+
+    <div class="main-card">
+        
+        <div id="screen-1">
+            <img src="miss-you.gif" alt="Cute Bear" id="main-gif" class="gif-sticker">
+            <h1>Do you miss me? 🥺</h1>
+            <p>Can't help but counting down the days till I meet you again</p>
+            
+            <div class="buttons">
+                <button class="btn yes-btn" onclick="sayYes()">YES!</button>
+                <button class="btn no-btn" id="noBtn" onmouseover="moveButton()">NO</button>
+            </div>
+        </div>
+
+        <div id="screen-2" class="hidden">
+            <img src="happy.gif" alt="Happy Bear" class="gif-sticker">
+            <h1>YAY! HEHEHE 💖</h1>
+            <p>SO YOU DO MISS ME TOO! 👉👈</p>
+            
+            <div class="gallery">
+                <div class="polaroid-container p1">
+                    <img src="photo1.jpg">
+                    <p class="caption">First meet-up: Exhausted af but your yapping somehow calmed me lol. I was really surprised at how comfortable it was hehe</p>
+                </div>
+                <div class="polaroid-container p2">
+                    <img src="photo2.jpg">
+                    <p class="caption">Everything was well till you mentioned LDR lol. I kinda froze there. Very stupid, but yea all is good now!</p>
+                </div>
+                <div class="polaroid-container p3">
+                    <img src="photo3.jpg">
+                    <p class="caption">China trip: Saw this and immediately thought of you. But kinda shy I didn't know if it was too much HAHHAHA or weird</p>
+                </div>
+                <div class="polaroid-container p4">
+                    <img src="photo4.jpg">
+                    <p class="caption">One month later: The late night texts made me fell for you harder and meeting in person confirmed it! AHSHDDJSA</p>
+                </div>
+                <div class="polaroid-container p5">
+                    <img src="photo5.jpg">
+                    <p class="caption">Last meet-up before you fly. Really wanted a polaroid with you. Didn't know I was so sentimental boohooo</p>
+                </div>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="btn back-btn" onclick="goBack(1)">⬅ Back</button>
+                <button class="btn next-btn" onclick="showLetter()">Open Letter 💌</button>
+            </div>
+        </div>
+
+        <div id="screen-3" class="hidden">
+            <h1>A Letter for You 📝</h1>
+            
+            <div class="envelope-wrapper" onclick="openEnvelope()">
+                <div class="envelope-closed" id="closed-env">
+                    <div class="wax-seal">❤️</div>
+                    <p>Click to Open</p>
+                </div>
+                <div class="letter-paper hidden" id="open-letter">
+                    <p>Haluuuu,</p>
+                    <p>
+                        I don't know how you would react to this but I hope it's not too corny or overwhelming for you hahahaha ahhhhh!! 
+                        I guess I do like you a lot 👉👈 
+                        <br><br>
+                        Even though life can get busy and hectic at times but I appreciate my time with you, 
+                        be it in person or through texts. Go and enjoy your time there and meet new people (or new crushes 👀), 
+                        new things, hobbies and trips. I'm always one call away if you need a cheerleader 💪🏻💪🏻 You can always find this link again if you're down 
+                    </p>
+                    <p>Benji's no.1 fan</p>
+                </div>
+            </div>
+
+            <h3>不知道是恋爱脑还是小丑哈哈哈🎶</h3>
+            
+            <div class="spotify-container">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0DWSDIklpSyUEWlDP3Bu4M?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+
+            <div class="nav-buttons">
+                <button class="btn back-btn" onclick="goBack(2)">⬅ Look at Photos Again</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

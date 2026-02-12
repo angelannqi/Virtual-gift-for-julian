@@ -1,0 +1,176 @@
+body {
+    background-color: #ffe6e9; /* Soft Pink */
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* LDR Clock Styling */
+.clock-container {
+    display: flex;
+    gap: 20px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+    color: #ff4d6d;
+    font-size: 0.9em;
+}
+
+.main-card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin: 20px;
+    max-width: 400px;
+    width: 90%;
+    transition: height 0.3s ease;
+}
+
+h1 { color: #ff4d6d; font-size: 1.5em; }
+p { color: #555; font-size: 1em; }
+
+.gif-sticker {
+    width: 140px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.buttons { margin-top: 20px; height: 50px; position: relative; }
+
+.btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.2s;
+    font-weight: bold;
+}
+
+.yes-btn { background-color: #ff4d6d; color: white; }
+.yes-btn:hover { transform: scale(1.1); }
+.next-btn { background-color: #ff8fa3; color: white; margin-top: 15px; }
+
+/* The Running No Button */
+.no-btn { 
+    background-color: #ddd; 
+    color: black; 
+    position: absolute; 
+    transition: 0.1s; /* Fast movement */
+}
+
+/* Photo Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.polaroid-container {
+    background: white;
+    padding: 8px 8px 30px 8px; /* Extra bottom padding for text */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s;
+    width: 90px;
+    height: auto;
+}
+
+.polaroid-container img { width: 100%; height: 90px; object-fit: cover; border: 1px solid #eee; }
+.caption { font-size: 9px; margin-top: 5px; font-family: 'Courier New', monospace; line-height: 1.2; }
+
+/* Rotations for "Messy" Look */
+.p1 { transform: rotate(-5deg); }
+.p2 { transform: rotate(3deg); }
+.p3 { transform: rotate(-4deg); }
+.p4 { transform: rotate(4deg); }
+.p5 { transform: rotate(-2deg); }
+
+.polaroid-container:hover { transform: scale(1.5) rotate(0deg); z-index: 10; }
+
+/* Envelope Animation */
+.envelope-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 20px auto;
+    cursor: pointer;
+}
+
+.envelope-closed {
+    background: #ff8fa3;
+    height: 160px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: opacity 0.5s;
+}
+
+.wax-seal { font-size: 35px; margin-bottom: 5px; text-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+
+.letter-paper {
+    background: #fffdf0;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    line-height: 1.5;
+    /* Hidden state for animation */
+    opacity: 0; 
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+/* Utility Classes */
+.hidden { display: none; }
+.slide-up { opacity: 1; transform: translateY(-20px); display: block !important; }
+
+/* Spotify Embed Style */
+.spotify-container iframe { 
+    border-radius: 12px; 
+    width: 100%; 
+    height: 352px; /* Large player height */
+    border: none; 
+}
+
+/* --- Back Button Style --- */
+.back-btn {
+    background-color: #ffc2d1; /* Lighter pink */
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    margin-top: 10px;
+}
+
+.back-btn:hover {
+    background-color: #ff9eb5;
+    transform: scale(1.05);
+}
+
+/* Container for navigation buttons (Next + Back) */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
